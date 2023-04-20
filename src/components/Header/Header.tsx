@@ -1,6 +1,7 @@
 import React from 'react';
 import styles from './Header.module.css';
 import classnames from 'classnames';
+import logo from '../../assets/logo-white.png';
 
 const cx = classnames.bind(styles)
 
@@ -8,7 +9,7 @@ export const Header = () => {
   const test = 'hoi'
   return (
     <header className={cx(styles.base)}>
-      <h1>Hello world</h1>
+      <img src={logo} className={cx(styles.logo)}/>
     </header>
   )
 }

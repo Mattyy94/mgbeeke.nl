@@ -1,6 +1,7 @@
 import React from 'react';
 import styles from './HomeView.module.css';
 import classnames from 'classnames';
+import { Socials } from '../components/Socials';
 
 const cx = classnames.bind(styles)
 
@@ -26,6 +27,7 @@ export const HomeView = () => {
             </span>
           </div>
         </div>
+        <Socials />
       </div>
   )
 }

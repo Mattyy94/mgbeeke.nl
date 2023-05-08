@@ -1,7 +1,7 @@
 .base {
   display: flex;
   flex-direction: column;
-  margin: 0 auto;
+  margin: 0 auto 2rem auto;
   padding: 2rem;
   text-align: center;
 }
@@ -14,7 +14,7 @@
   color: #fff;
   font-family: monospace;
   overflow: hidden; 
-  border-right: .15em solid orange;
+  border-right: .15em solid rgb(241, 164, 20);
   white-space: nowrap;
   margin: 0 auto;
   letter-spacing: .15em; 
@@ -32,7 +32,7 @@
 /* The typewriter cursor effect */
 @keyframes blink-caret {
   from, to { border-color: transparent }
-  50% { border-color: orange }
+  50% { border-color: rgb(241, 164, 20); }
 } 
 
 .about {

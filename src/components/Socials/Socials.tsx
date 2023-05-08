@@ -1,13 +1,9 @@
 import React from 'react';
 import styles from './Socials.module.css';
 import classnames from 'classnames';
-import Instagram from '../../assets/socials/instagram.svg';
+import {ReactComponent as Instagram} from '../../assets/socials/instagram.svg';
 import {ReactComponent as Linkedin} from '../../assets/socials/linkedin.svg';
-
-// https://stackoverflow.com/questions/74720726/type-definition-for-vite-plugin-svgr/75818331#75818331
-// https://dev.to/cassidoo/importing-svg-files-as-react-components-with-vite-l3n
-
-// TODO fix svg loader
+import {ReactComponent as Mail} from '../../assets/socials/mail.svg'
 
 const cx = classnames.bind(styles)
 
@@ -17,18 +13,21 @@ export const Socials = () => {
     <div className={cx(styles.base)}>
       <h2>How to reach me?</h2>
       <div className={cx(styles.wrapper)}>
+        <a className={cx(styles.socialButton, styles.mail)}>
+          <strong><span className={cx(styles.blockspam)} aria-hidden="true">PLEASE GO AWAY!</span> Hello@{/* sdfjsdhfkjypcs -*/}mgbeeke.nl</strong>
+          <Mail className={cx(styles.icon, styles.mailIcon)} />
+        </a>   
         <div>
-          <strong>mail me @</strong>
-          <span className={cx(styles.mail)}>Hello@mgbeeke.nl</span>
-          </div>
-        <div>
-          LinkedIn
-          <Linkedin />
+          <a className={cx(styles.socialButton)} href="https://www.linkedin.com/in/matthijs-beeke/?" target="_blank">
+            <strong>@matthijs-beeke</strong>
+            <Linkedin className={cx(styles.icon)}/>
+          </a>
         </div>
         <div>
-          Instagram
-          (photography)
-          <img width={40} height={40} src={Instagram} className={cx(styles.logo)} />
+          <a className={cx(styles.socialButton)} href="https://www.instagram.com/mbnatureshots/" target="_blank"> 
+            <strong>@mbnatureshots</strong>
+            <Instagram className={cx(styles.icon)}/>
+          </a>
         </div>
       </div>
     </div>

@@ -1,8 +1,8 @@
 .base {
   display: flex;
   flex-direction: column;
-  margin: 0 auto 2rem auto;
-  padding: 2rem;
+  margin: 2rem;
+  /* padding: 2rem; */
   text-align: center;
 }
 
@@ -12,7 +12,6 @@
 
 .typewriter h1 {
   color: #fff;
-  font-family: monospace;
   overflow: hidden; 
   border-right: .15em solid rgb(241, 164, 20);
   white-space: nowrap;
@@ -21,6 +20,13 @@
   animation: 
     typing 1s steps(30, end),
     blink-caret 1s step-end infinite;
+}
+
+
+@media screen and (max-width: 750px) {
+  .typewriter h1 {
+    font-size: 2.8rem;
+  }
 }
 
 /* The typing effect */

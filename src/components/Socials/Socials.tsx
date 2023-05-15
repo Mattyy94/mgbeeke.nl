@@ -8,7 +8,6 @@ import {ReactComponent as Mail} from '../../assets/socials/mail.svg'
 const cx = classnames.bind(styles)
 
 export const Socials = () => {
-  const test = 'hoi'
   return (
     <div className={cx(styles.base)}>
       <h2>How to reach me?</h2>

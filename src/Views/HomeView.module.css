@@ -34,15 +34,3 @@
   from, to { border-color: transparent }
   50% { border-color: rgb(241, 164, 20); }
 } 
-
-.about {
-  display: flex;
-  flex-direction: row;
-  gap: 4rem;
-  margin-top:4rem;
-}
-
-.about .item {
-  outline: 2px solid white;
-  padding: 2rem;
-}

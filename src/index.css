@@ -1,9 +1,10 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;1,300&display=swap');
+
 :root {
-  /* font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif; */
-  font-family: consolas;
+  font-family: 'Lato', sans-serif;
   line-height: 1.5;
   font-weight: 400;
-
   color-scheme: light dark;
   color: rgba(255, 255, 255, 0.87);
   background-color: #242424;
@@ -45,6 +46,10 @@ h3 {
 
 h4 {
   margin: 0;
+}
+
+h1, h2, h3, h4 {
+  font-family: consolas;
 }
 
 button {

@@ -1,0 +1,25 @@
+.base {
+  display: flex;
+  flex-direction: row;
+  gap: 4rem;
+  margin-top:4rem;
+}
+
+.base .item {
+  display: flex;
+  flex-direction: column;
+  /* width: 50%; */
+  gap: 1.6rem;
+  outline: 2px solid white;
+  padding: 2rem;
+}
+
+@media screen and (max-width: 750px) {
+  .base {
+    flex-wrap: wrap;
+  }
+
+  base .item {
+    width: 100%;
+  }
+}

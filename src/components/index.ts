@@ -1,3 +1,4 @@
 export * from './Banner';
 export * from './Header';
-export * from './test'
+export * from './Socials';
+export * from './AboutMe';

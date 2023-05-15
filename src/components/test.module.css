@@ -1,0 +1,82 @@
+.test {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+}
+
+.scrollContainer {
+  position: relative;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  /* overflow: hidden; */
+  transition: transform 0.5s ease-in-out;
+}
+
+.scrollContainer section {
+  position: absolute;
+  top: calc(100% * var(--index));
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 3em;
+  transition: transform 0.5s ease-in-out;
+  transform: translateY(100%);
+}
+
+.scrollContainer .visible {
+  transform: translateY(0);
+  background-color: red;
+}
+
+/* Button styles */
+.buttonContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin-bottom: 10px;
+}
+
+.button {
+  padding: 10px 20px;
+  margin: 0 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: #333;
+  color: #fff;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.button:hover {
+  background-color: #666;
+}
+
+
+
+/* 
+Using React TS, I want to create an ScrollEffect component that is used as an Child. 
+this component should contain an array of ReactNodes. for now make it 2 sections with an h1 stating what number it is.
+
+Oww I am using functional components and i use classnames like this:
+Classnames:
+const cx = classnames.bind(styles); -> className={cx(styles.example)}
+
+The SrollEffect component, should initially show the 1st item of the array that is passed, the second item, should nog be visiable.
+But when you scroll up, or on mobile touch up (1 time) it should make the second item visuable and the 1st item hidden.
+
+Apply a nice css transition to it to make it look natural.
+
+Please provide full code of: Scrolleffect.tsx(component) + Scrolleffect.module.css, HomeView.tsx (implmentation)
+
+
+
+*/

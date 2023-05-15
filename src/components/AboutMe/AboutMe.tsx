@@ -1,27 +1,30 @@
-import React, { useMemo } from 'react';
+import React from 'react';
 import styles from './AboutMe.module.css';
 import classnames from 'classnames';
 
-const cx = classnames.bind(styles)
+const cx = classnames.bind(styles);
 
 export const AboutMe = () => {
 
-  const age = useMemo(() => {
-    const parsedBirthday = new Date('09/24/1994');
+  const getYears = (input: string) => {
+    const parsedBirthday = new Date(input);
     const currentDate = new Date();
     const ageDiff = currentDate.getTime() - parsedBirthday.getTime();
     const ageDate = new Date(ageDiff); // Milliseconds from epoch
     return Math.abs(ageDate.getUTCFullYear() - 1970);
-  }, []);
+  };
+
+  const age = getYears('09/24/1994');
+  const married = getYears('01/27/2020');
 
   return (
     <section className={cx(styles.base)}>
       <article className={cx(styles.item)}>
         <h3>About me</h3>
         <span>
-        Hey there! I'm Matthijs, and 28 years old. I've been happily married to my lovely wife, Astrid, for three amazing years.
+        Hey there! I'm Matthijs, and {age} years old. I've been happily married to my lovely wife, Astrid, for {married} amazing years.
         Oh, and did I mention we have a bunch of adorable pets? 
-        <br /><br />
+          <br /><br />
         Our home is nestled in the charming village of Nunspeet,
         right in the heart of the beautiful Veluwe region.
         The best part? The forest is just a short 5-minute stroll away from our doorstep.
@@ -39,7 +42,7 @@ export const AboutMe = () => {
         Back in 2016, I embarked on my journey as a Mediadeveloper graduate and landed a role at Olyslager,
         where I dived into the world of front-end development. At Olyslager, we crafted oil advisors for well-known brands,
         unleashing my creativity and coding skills.
-        <br /><br />
+          <br /><br />
         One of the exciting challenges I encountered was the migration from a colossal monolith/legacy system to nimble micro frontends,
         utilizing the power of Vue.js and TypeScript.
         </span>
@@ -54,5 +57,5 @@ export const AboutMe = () => {
         </span>
       </article>
     </section>
-  )
-}
+  );
+};

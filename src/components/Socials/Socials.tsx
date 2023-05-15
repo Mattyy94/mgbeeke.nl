@@ -3,9 +3,9 @@ import styles from './Socials.module.css';
 import classnames from 'classnames';
 import {ReactComponent as Instagram} from '../../assets/socials/instagram.svg';
 import {ReactComponent as Linkedin} from '../../assets/socials/linkedin.svg';
-import {ReactComponent as Mail} from '../../assets/socials/mail.svg'
+import {ReactComponent as Mail} from '../../assets/socials/mail.svg';
 
-const cx = classnames.bind(styles)
+const cx = classnames.bind(styles);
 
 export const Socials = () => {
   return (
@@ -30,5 +30,5 @@ export const Socials = () => {
         </div>
       </div>
     </div>
-  )
-}
+  );
+};

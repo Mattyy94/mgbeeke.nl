@@ -6,10 +6,10 @@
 }
 
 .base .item {
-  display: flex;
+display: flex;     
   flex-direction: column;
   gap: 1.6rem;
-  outline: 2px solid white;
+  outline: 2px solid rgba(255, 255, 255, 0.87);
   padding: 2rem;
 }
 

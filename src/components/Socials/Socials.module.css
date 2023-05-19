@@ -1,0 +1,76 @@
+.base {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 2rem 0 4rem 0;
+}
+
+.wrapper {
+  display: flex;
+  flex-wrap: wrap;;
+  flex-direction: row;
+  gap: 6rem;
+  justify-content: space-between;
+}
+
+.wrapper div {
+  display: flex;
+  flex-direction: column;
+}
+
+.icon.mailIcon {
+  width: auto;
+  height: 55px;
+  stroke: white;
+}
+
+.socialButton {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+  align-items: center;
+  color: white;
+}
+
+.socialButton.mail {
+  cursor: pointer; 
+}
+
+.blockspam {
+  display: none;
+}
+
+.socialButton:hover {
+  color: rgb(241, 164, 20);
+}
+
+.icon {
+  fill: white;
+  width: 50px;
+  height: 50px;
+  padding-top: 0.8rem;
+  transition: all .2s ease-in-out;
+}
+
+.socialButton:hover .icon {
+  fill: rgb(241, 164, 20);
+  transform: scale(1.1)
+}
+
+.socialButton:hover .icon.mailIcon {
+  stroke: rgb(241, 164, 20);
+}
+
+
+
+
+@media only screen and (max-width: 470px) {
+  .socialButton {
+   color: rgb(241, 164, 20);
+  }
+
+  .wrapper {
+   justify-content: center;
+   gap: 2.4rem;
+  }
+}

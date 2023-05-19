@@ -1,14 +1,12 @@
 .base {
   display: flex;
   justify-content: center;
-  padding: 0.8rem;
-  background-color: #4646469f;
-  position: fixed;
+  position: absolute;
   width: 100%;
-
 }
 
 .logo {
   width: 300px;
   height: auto;
+  padding: 0.8rem;
 }

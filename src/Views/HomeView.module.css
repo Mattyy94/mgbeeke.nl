@@ -1,8 +1,8 @@
 .base {
   display: flex;
   flex-direction: column;
-  margin: 0 auto;
-  padding: 2rem;
+  margin: 2rem;
+  /* padding: 2rem; */
   text-align: center;
 }
 
@@ -12,15 +12,21 @@
 
 .typewriter h1 {
   color: #fff;
-  font-family: monospace;
   overflow: hidden; 
-  border-right: .15em solid orange;
+  border-right: .15em solid rgb(241, 164, 20);
   white-space: nowrap;
   margin: 0 auto;
   letter-spacing: .15em; 
   animation: 
     typing 1s steps(30, end),
     blink-caret 1s step-end infinite;
+}
+
+
+@media screen and (max-width: 750px) {
+  .typewriter h1 {
+    font-size: 2.8rem;
+  }
 }
 
 /* The typing effect */
@@ -32,17 +38,5 @@
 /* The typewriter cursor effect */
 @keyframes blink-caret {
   from, to { border-color: transparent }
-  50% { border-color: orange }
+  50% { border-color: rgb(241, 164, 20); }
 } 
-
-.about {
-  display: flex;
-  flex-direction: row;
-  gap: 4rem;
-  margin-top:4rem;
-}
-
-.about .item {
-  outline: 2px solid white;
-  padding: 2rem;
-}

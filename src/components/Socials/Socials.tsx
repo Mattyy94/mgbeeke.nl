@@ -13,7 +13,7 @@ export const Socials = () => {
     <div className={cx(styles.base)}>
       <h2>How to reach me?</h2>
       <div className={cx(styles.wrapper)}>
-        <a className={cx(styles.socialButton, styles.mail)} href='mailto:hello@emgbeeke.nl?subject=Please%20Remove%20me%20[SPAM%20PREVENTION]'>
+        <a className={cx(styles.socialButton, styles.mail)} href='mailto:hello@mgbeeke.nl?subject=Please%20Remove%20me%20[SPAM%20PREVENTION]'>
           <strong><span className={cx(styles.blockspam)} aria-hidden="true">PLEASE GO AWAY!</span> Hello@{/* sdfjsdhfkjypcs -*/}mgbeeke.nl</strong>
           <Mail className={cx(styles.icon, styles.mailIcon)} />
         </a>   

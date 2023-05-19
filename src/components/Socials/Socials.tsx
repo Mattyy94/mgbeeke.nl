@@ -4,6 +4,7 @@ import classnames from 'classnames';
 import {ReactComponent as Instagram} from '../../assets/socials/instagram.svg';
 import {ReactComponent as Linkedin} from '../../assets/socials/linkedin.svg';
 import {ReactComponent as Mail} from '../../assets/socials/mail.svg';
+import {ReactComponent as Github} from '../../assets/socials/github.svg';
 
 const cx = classnames.bind(styles);
 
@@ -20,6 +21,12 @@ export const Socials = () => {
           <a className={cx(styles.socialButton)} href="https://www.linkedin.com/in/matthijs-beeke/?" target="_blank">
             <strong>@matthijs-beeke</strong>
             <Linkedin className={cx(styles.icon)}/>
+          </a>
+        </div>
+        <div>
+          <a className={cx(styles.socialButton)} href="https://github.com/Mattyy94" target="_blank"> 
+            <strong>@Mattyy94</strong>
+            <Github className={cx(styles.icon)}/>
           </a>
         </div>
         <div>

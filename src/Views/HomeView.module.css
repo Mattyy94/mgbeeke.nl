@@ -13,7 +13,7 @@
 .typewriter h1 {
   color: #fff;
   overflow: hidden; 
-  border-right: .15em solid rgb(241, 164, 20);
+  border-right: .15em solid #f1a414;
   white-space: nowrap;
   margin: 0 auto;
   letter-spacing: .15em; 

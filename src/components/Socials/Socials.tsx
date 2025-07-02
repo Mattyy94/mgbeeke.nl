@@ -30,8 +30,8 @@ export const Socials = () => {
           </a>
         </div>
         <div>
-          <a className={cx(styles.socialButton)} href="https://www.instagram.com/mbnatureshots/" target="_blank"> 
-            <strong>@mbnatureshots</strong>
+          <a className={cx(styles.socialButton)} href="https://www.instagram.com/matthijs.beeke/" target="_blank"> 
+            <strong>@matthijs.beeke</strong>
             <Instagram className={cx(styles.icon)}/>
           </a>
         </div>

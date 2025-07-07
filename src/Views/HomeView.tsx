@@ -12,10 +12,10 @@ export const HomeView = () => {
       <div className={cx(styles.typewriter)}>
         <h1>Hello world</h1>
       </div>
-      <h3>Welcome on the personal site of Matthijs Beeke or Matty for friends</h3>
+      <h3>Welcome on the personal site of Matthijs Beeke </h3>
       <AboutMe />
-      <Socials />
       <Portfolio />
+      <Socials />
     </div>
   );
 };

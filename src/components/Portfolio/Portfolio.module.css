@@ -4,21 +4,21 @@
 }
 
 .galleryWrapper {
+  max-width: 1200px;
+  margin: 0 auto;
   display: flex;
   flex-wrap: wrap;
-  gap: 1rem;
+  gap: 0.4rem;
   justify-content: center;
-  margin: 2rem 4rem 0 4rem;
+  padding: 2rem 4rem 0 4rem;
 }
 
-.gallery-item img {
-  max-width: 180px;
-  border-radius: 8px;
+.galleryItem img {
   box-shadow: 0 2px 8px rgba(0,0,0,0.08);
   transition: transform 0.2s;
 }
 
-.gallery-item img:hover {
+.galleryItem img:hover {
   transform: scale(1.04);
   box-shadow: 0 4px 16px rgba(0,0,0,0.16);
 }

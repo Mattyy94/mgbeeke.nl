@@ -54,13 +54,13 @@ export const Portfolio = () => {
         {galleryItems.map((item) => (
           <a
             key={item.fileName}
-            className="gallery-item"
+            className={cx(styles.galleryItem)}
             data-lg-size="1400-933"
             data-src={item.src}
             data-sub-html={'<h4>Matthijs Beeke</h4>'}
             href={item.src}
           >
-            <img src={item.thumb} alt={'Matthijs Beeke'} style={{ maxWidth: 165, margin: 1, }} />
+            <img src={item.thumb} alt={'Matthijs Beeke'} />
           </a>
         ))}
       </div>

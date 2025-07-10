@@ -1,7 +1,7 @@
 import React from 'react';
 import styles from './HomeView.module.css';
 import classnames from 'classnames';
-import { Socials, AboutMe, Gallery } from '../components/';
+import { Socials, AboutMe, Gallery, Portfolio } from '../components/';
 
 const cx = classnames.bind(styles);
 
@@ -12,9 +12,9 @@ export const HomeView = () => {
         <h1>Hello world</h1>
       </div>
       <h3>Welcome on the personal site of Matthijs Beeke</h3>
-      {/* Gallery here */}
-      <Gallery />
+      <h3>Welcome on the personal site of Matthijs Beeke </h3>
       <AboutMe />
+      <Portfolio />
       <Socials />
     </div>
   );

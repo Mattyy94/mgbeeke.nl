@@ -1,0 +1,90 @@
+# Ensure core file types are served with the correct MIME types
+# This helps resolve "disallowed MIME type" errors
+
+<IfModule mod_mime.c>
+    # HTML
+    AddType text/html .html .htm
+
+    # JavaScript
+    AddType application/javascript .js
+
+    # CSS
+    AddType text/css .css
+
+    # Images
+    AddType image/svg+xml .svg
+    AddType image/jpeg .jpeg .jpg
+    AddType image/png .png
+    AddType image/gif .gif
+    AddType image/webp .webp
+
+    # Web Fonts
+    AddType application/font-woff .woff
+    AddType application/font-woff2 .woff2
+    AddType application/x-font-ttf .ttf
+    AddType application/vnd.ms-fontobject .eot
+</IfModule>
+
+# Optional: Enable Gzip compression for better performance
+# This can speed up loading times for visitors
+<IfModule mod_deflate.c>
+    # Compress HTML, CSS, JavaScript, and other text-based files
+    AddOutputFilterByType DEFLATE text/plain
+    AddOutputFilterByType DEFLATE text/html
+    AddOutputFilterByType DEFLATE text/xml
+    AddOutputFilterByType DEFLATE text/css
+    AddOutputFilterByType DEFLATE application/javascript
+    AddOutputFilterByType DEFLATE application/x-javascript
+    AddOutputFilterByType DEFLATE application/json
+    AddOutputFilterByType DEFLATE application/xml
+    AddOutputFilterByType DEFLATE application/xhtml+xml
+    AddOutputFilterByType DEFLATE application/rss+xml
+    AddOutputFilterByType DEFLATE application/atom_xml
+    AddOutputFilterByType DEFLATE application/font-woff
+    AddOutputFilterByType DEFLATE application/font-woff2
+    AddOutputFilterByType DEFLATE application/vnd.ms-fontobject
+    AddOutputFilterByType DEFLATE application/x-font-ttf
+    AddOutputFilterByType DEFLATE image/svg+xml
+
+    # Do not compress images (they are usually already compressed)
+    SetEnvIfNoCase Request_URI \
+    \.(?:gif|jpe?g|png|webp|mp4|webm|ogv|pdf|zip|rar|gz|tgz|bz2|bzip2|exe|flv|mov|ppt|pptx|doc|docx|xls|xlsx)$ no-gzip dont-vary
+</IfModule>
+
+# Optional: Set cache control headers for better caching
+# This tells browsers how long to cache your static assets
+<IfModule mod_expires.c>
+    ExpiresActive On
+    ExpiresDefault "access plus 1 month"
+
+    # HTML
+    ExpiresByType text/html "access plus 0 seconds" # Don't cache HTML by default to always get fresh content
+
+    # CSS, JavaScript, Images, etc.
+    ExpiresByType text/css "access plus 1 year"
+    ExpiresByType application/javascript "access plus 1 year"
+    ExpiresByType application/x-javascript "access plus 1 year"
+    ExpiresByType image/gif "access plus 1 year"
+    ExpiresByType image/jpeg "access plus 1 year"
+    ExpiresByType image/png "access plus 1 year"
+    ExpiresByType image/svg+xml "access plus 1 year"
+    ExpiresByType image/x-icon "access plus 1 year" # Favicon
+    ExpiresByType application/font-woff "access plus 1 year"
+    ExpiresByType application/font-woff2 "access plus 1 year"
+    ExpiresByType application/x-font-ttf "access plus 1 year"
+    ExpiresByType application/vnd.ms-fontobject "access plus 1 year"
+</IfModule>
+
+# Optional: Prevent directory listing
+Options -Indexes
+
+# If your React/Vite app uses client-side routing (e.g., React Router)
+# and you get 404 errors on direct URL access (e.g., /about), you might need this:
+# <IfModule mod_rewrite.c>
+#   RewriteEngine On
+#   RewriteBase /
+#   RewriteRule ^index\.html$ - [L]
+#   RewriteCond %{REQUEST_FILENAME} !-f
+#   RewriteCond %{REQUEST_FILENAME} !-d
+#   RewriteRule . /index.html [L]
+# </IfModule>

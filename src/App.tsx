@@ -1,7 +1,8 @@
 import styles from './App.module.css';
-import {Header, Banner} from './components';
+import { Header, Banner } from './components';
 import classnames from 'classnames';
-import { HomeView } from './Views';
+import { HomeView, LifelineView } from './Views';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
 const cx = classnames.bind(styles);
 
@@ -10,7 +11,12 @@ function App() {
     <div className="App">
       <Header />
       <Banner />
-      <HomeView />
+      <Router>
+        <Routes>
+          <Route path="/" element={<HomeView />} />
+          <Route path="/lifeline" element={<LifelineView />} />
+        </Routes>
+      </Router>
     </div>
   );
 }

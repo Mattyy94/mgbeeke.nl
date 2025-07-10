@@ -1,8 +1,7 @@
 import React from 'react';
 import styles from './HomeView.module.css';
 import classnames from 'classnames';
-import { Socials, AboutMe } from '../components/';
-import { Portfolio } from '../components/Portfolio';
+import { Socials, AboutMe, Gallery, Portfolio } from '../components/';
 
 const cx = classnames.bind(styles);
 
@@ -12,6 +11,7 @@ export const HomeView = () => {
       <div className={cx(styles.typewriter)}>
         <h1>Hello world</h1>
       </div>
+      <h3>Welcome on the personal site of Matthijs Beeke</h3>
       <h3>Welcome on the personal site of Matthijs Beeke </h3>
       <AboutMe />
       <Portfolio />

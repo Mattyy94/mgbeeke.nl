@@ -1,0 +1,16 @@
+[
+  { "year": 2012, "event": "High School", "description": "Started high school.", "type": "education", "rating": 6 },
+  { "year": 2016, "event": "Graduated High School", "description": "Finished high school with honors.", "type": "education", "rating": 8 },
+  { "year": 2017, "event": "First Job", "description": "Started working at a local store.", "type": "work", "rating": 5 },
+  { "year": 2018, "event": "University", "description": "Began university studies in Computer Science.", "type": "education", "rating": 7 },
+  { "year": 2019, "event": "Internship", "description": "Interned at a tech company.", "type": "work", "rating": 7 },
+  { "year": 2020, "event": "Graduated University", "description": "Completed BSc in Computer Science.", "type": "education", "rating": 9 },
+  { "year": 2021, "event": "First Full-time Job", "description": "Started as a junior developer.", "type": "work", "rating": 8 },
+  { "year": 2022, "event": "Promotion", "description": "Promoted to mid-level developer.", "type": "work", "rating": 9 },
+  { "year": 2023, "event": "Moved City", "description": "Relocated for work.", "type": "prive", "rating": 7 },
+  { "year": 2024, "event": "Started Hobby", "description": "Took up painting as a hobby.", "type": "prive", "rating": 8 },
+  { "year": 2025, "event": "Started Masters", "description": "Began MSc in Data Science.", "type": "education", "rating": 8 },
+  { "year": 2026, "event": "New Job", "description": "Joined a new company as a data scientist.", "type": "work", "rating": 9 },
+  { "year": 2027, "event": "Travel Abroad", "description": "Traveled to Japan for a month.", "type": "prive", "rating": 9 },
+  { "year": 2028, "event": "Graduated Masters", "description": "Completed MSc in Data Science.", "type": "education", "rating": 10 }
+] 

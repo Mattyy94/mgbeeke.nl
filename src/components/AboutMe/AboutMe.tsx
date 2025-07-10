@@ -53,7 +53,7 @@ export const AboutMe = () => {
           Recently, in 2022, we completed a remarkable transformation,
           transitioning from a scattered multi-repo source to a unified monolith architecture powered by Next.js (React + TypeScript).
           <br /><br />
-          It's a thrilling ride, pushing the boundaries of technology and paving the way for a seamless learning experience!
+          It's a thrilling ride at Brainstud, pushing the boundaries of technology and paving the way for a seamless learning experience!
         </span>
       </article>
     </section>

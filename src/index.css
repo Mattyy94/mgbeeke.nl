@@ -1,14 +1,14 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;1,300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata&display=swap');
 
 :root {
-  font-family: 'Lato', sans-serif;
+  font-family: 'Inconsolata', monospace;
   line-height: 1.5;
   font-weight: 400;
-  color-scheme: light dark;
+  /* color-scheme: light dark; */
   color: rgba(255, 255, 255, 0.87);
   background-color: #242424;
-
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
@@ -48,9 +48,6 @@ h4 {
   margin: 0;
 }
 
-h1, h2, h3, h4 {
-  font-family: consolas;
-}
 
 button {
   border-radius: 8px;
@@ -71,7 +68,7 @@ button:focus-visible {
   outline: 4px auto rgb(241, 164, 20);
 }
 
-@media (prefers-color-scheme: light) {
+/* @media (prefers-color-scheme: light) {
   :root {
     color: #213547;
     background-color: #ffffff;
@@ -82,4 +79,4 @@ button:focus-visible {
   button {
     background-color: #f9f9f9;
   }
-}
+} */

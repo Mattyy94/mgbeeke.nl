@@ -4,6 +4,7 @@ import classnames from 'classnames';
 import {ReactComponent as Instagram} from '../../assets/socials/instagram.svg';
 import {ReactComponent as Linkedin} from '../../assets/socials/linkedin.svg';
 import {ReactComponent as Mail} from '../../assets/socials/mail.svg';
+import {ReactComponent as Github} from '../../assets/socials/github.svg';
 
 const cx = classnames.bind(styles);
 
@@ -12,7 +13,7 @@ export const Socials = () => {
     <div className={cx(styles.base)}>
       <h2>How to reach me?</h2>
       <div className={cx(styles.wrapper)}>
-        <a className={cx(styles.socialButton, styles.mail)}>
+        <a className={cx(styles.socialButton, styles.mail)} href='mailto:hello@mgbeeke.nl?subject=Please%20Remove%20me%20[SPAM%20PREVENTION]'>
           <strong><span className={cx(styles.blockspam)} aria-hidden="true">PLEASE GO AWAY!</span> Hello@{/* sdfjsdhfkjypcs -*/}mgbeeke.nl</strong>
           <Mail className={cx(styles.icon, styles.mailIcon)} />
         </a>   
@@ -20,6 +21,12 @@ export const Socials = () => {
           <a className={cx(styles.socialButton)} href="https://www.linkedin.com/in/matthijs-beeke/?" target="_blank">
             <strong>@matthijs-beeke</strong>
             <Linkedin className={cx(styles.icon)}/>
+          </a>
+        </div>
+        <div>
+          <a className={cx(styles.socialButton)} href="https://github.com/Mattyy94" target="_blank"> 
+            <strong>@Mattyy94</strong>
+            <Github className={cx(styles.icon)}/>
           </a>
         </div>
         <div>

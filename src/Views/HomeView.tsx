@@ -1,7 +1,7 @@
 import React from 'react';
 import styles from './HomeView.module.css';
 import classnames from 'classnames';
-import { Socials, AboutMe, Gallery } from '../components/';
+import { Socials, AboutMe, Portfolio } from '../components/';
 
 const cx = classnames.bind(styles);
 
@@ -14,7 +14,7 @@ export const HomeView = () => {
       <h3>Welcome on the personal site of Matthijs Beeke</h3>
       <h3>Welcome on the personal site of Matthijs Beeke </h3>
       <AboutMe />
-      <Gallery />
+      <Portfolio />
       <Socials />
     </div>
   );

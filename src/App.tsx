@@ -11,7 +11,10 @@ const cx = classnames.bind(styles);
 function App() {
   const navigate = useNavigate();
   useEffect(() => {
-    if (window.location.hostname === 'groeivooruit' && window.location.pathname !== '/lifeline') {
+    if (
+      window.location.hostname.includes('groeivooruit') &&
+      window.location.pathname !== '/lifeline'
+    ) {
       navigate('/lifeline', { replace: true });
     }
   }, [navigate]);

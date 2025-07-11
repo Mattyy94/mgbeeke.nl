@@ -11,7 +11,7 @@
         "event": "Computer hulp aan huis",
         "description": "Voor mezelf begonnen met computer hulp aan huis, was erg leuk om mensen te helpen.",
         "type": "Work",
-        "rating": 7
+        "rating": 8
     },
     {
         "year": 2012,
@@ -137,7 +137,7 @@
         "event": "Bruilof!",
         "description": "We konden eindelijk onze Bruiloft vieren, het was een geweldige dag met veel vrienden en familie.",
         "type": "prive",
-        "rating": 8
+        "rating": 9
     },
     {
         "year": 2022,

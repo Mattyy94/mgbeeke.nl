@@ -5,12 +5,7 @@ import {
 } from 'recharts';
 import styles from './LifelineDiagram.module.css';
 import classnames from 'classnames';
-
-const typeColors: { [key: string]: string } = {
-  education: '#3fe9a2',
-  work: '#e93f6c',
-  prive: '#e9ae3f',
-};
+import { typeColors } from './typeColors';
 
 type LifelineEvent = {
   year: number;
@@ -33,7 +28,7 @@ type CustomDotProps = {
   data: LifelineEvent[];
 };
 
-const LifelineDiagram = () => {
+export const LifelineDiagram = () => {
   const [data, setData] = useState<LifelineEvent[]>([]);
   // Tooltip state
   const [tooltip, setTooltip] = useState<{
@@ -141,5 +136,3 @@ const LifelineDiagram = () => {
     </div>
   );
 };
-
-export default LifelineDiagram; 

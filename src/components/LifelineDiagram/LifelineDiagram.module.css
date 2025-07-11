@@ -21,3 +21,33 @@
   font-weight: bold;
   color: #e93f6c
 }
+
+.legenda {
+  margin: 2rem 0;
+  padding: 1rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+.legendaYear {
+  margin-bottom: 1.5rem;
+}
+.legendaToggle {
+  background: none;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  padding: 0.25rem 0.75rem;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  margin-bottom: 0.5rem;
+  transition: border-color 0.2s, color 0.2s;
+}
+
+.legendaItem {
+  list-style: none;;
+  margin-bottom: 1rem;
+  padding: 0.5rem 0.75rem;
+  border-radius: 4px;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.03);
+  border: 1px solid #eaeaea;
+}

@@ -6,6 +6,13 @@
         "type": "education",
         "rating": 7
     },
+        {
+        "year": 2011,
+        "event": "Computer hulp aan huis",
+        "description": "Voor mezelf begonnen met computer hulp aan huis, was erg leuk om mensen te helpen.",
+        "type": "Work",
+        "rating": 7
+    },
     {
         "year": 2012,
         "event": "Post sortering",
@@ -36,7 +43,7 @@
     },
     {
         "year": 2013,
-        "event": "Begonnen in Horeca bijbaan",
+        "event": "Begonnen in de Horeca - Bijbaan",
         "description": "Begonnen in de bediening van grieks restaurant, hier wel leuke tijd gehad, alleen manager had wat temprament..",
         "type": "work",
         "rating": 6
@@ -51,7 +58,7 @@
     {
         "year": 2014,
         "event": "Stages",
-        "description": "Stages bij kleine WebDevelopment bedrijven.",
+        "description": "Stages bij kleine WebDevelopment bedrijven, was erg leuk en divers",
         "type": "work",
         "rating": 7
     },
@@ -61,6 +68,13 @@
         "description": "Persoon weg uit huis, de situatie verbeterde.",
         "type": "prive",
         "rating": 7
+    },
+        {
+        "year": 2015,
+        "event": "Mats Media opgericht KVK",
+        "description": "Mats Media opgericht en ingeschreven bij kvk, websites maken voor klein mkb. Erg leuk om mee te denken met klant wensen.",
+        "type": "prive",
+        "rating": 8
     },
     {
         "year": 2016,
@@ -159,5 +173,19 @@
         "description": "Onze zoon Gijs is geboren!",
         "type": "prive",
         "rating": 10
+    },
+        {
+        "year": 2026,
+        "event": "Nieuwe baan",
+        "description": "Een nieuwe baan gevonden die bij mij past",
+        "type": "Work",
+        "rating": 9
+    },
+    {
+        "year": 2028,
+        "event": "2e kindje",
+        "description": "Mogelijk een 2e kindje",
+        "type": "prive",
+        "rating": 9
     }
 ]

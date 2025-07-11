@@ -1,15 +1,15 @@
 import React, { useEffect, useState } from 'react';
 import lifedata from '../../assets/lifedata.json';
 import {
-  LineChart, Line, XAxis, YAxis, CartesianGrid, Tooltip, Legend, ResponsiveContainer, Dot
+  LineChart, Line, XAxis, YAxis, CartesianGrid, Legend, ResponsiveContainer
 } from 'recharts';
 import styles from './LifelineDiagram.module.css';
 import classnames from 'classnames';
 
 const typeColors: { [key: string]: string } = {
-  education: 'green',
-  work: 'blue',
-  prive: 'orange',
+  education: '#3fe9a2',
+  work: '#e93f6c',
+  prive: '#e9ae3f',
 };
 
 type LifelineEvent = {
@@ -122,24 +122,19 @@ const LifelineDiagram = () => {
       {/* Absolutely positioned tooltip */}
       {tooltip && tooltip.event && (
         <div
+          className={cx(styles.tooltip)}
           style={{
-            position: 'absolute',
             left: tooltip.x,
             top: tooltip.y - 80,
-            background: '#222',
-            color: '#fff',
-            borderRadius: 6,
-            padding: 8,
-            fontSize: 12,
-            boxShadow: '0 2px 8px rgba(0,0,0,0.2)',
-            pointerEvents: 'none',
-            zIndex: 9999,
-            minWidth: 120,
-            maxWidth: 220,
-            whiteSpace: 'pre-line',
           }}
         >
-          <strong>{tooltip.event.event}</strong>
+          <strong
+            style={{
+              color: typeColors[tooltip.event.type],
+            }}
+          >
+            {tooltip.event.event}
+          </strong>
           <div>{tooltip.event.description}</div>
         </div>
       )}

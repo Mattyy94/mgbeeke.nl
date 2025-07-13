@@ -20,7 +20,7 @@ function App() {
   }, [navigate]);
 
   return (
-    <div className="App">
+    <div className={cx(styles.base)}>
       <Header />
       <Banner />
       <Routes>

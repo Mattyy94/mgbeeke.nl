@@ -3,6 +3,7 @@ import classNames from 'classnames';
 import styles from './Portfolio.module.css';
 import PhotoSwipeLightbox from 'photoswipe/lightbox';
 import 'photoswipe/style.css';
+import { Masonry } from 'masonic'; // <-- Use masonic
 
 // Dynamically import all images and thumbnails
 const images = import.meta.glob('../../assets/gallery/*.{jpg,png,jpeg}', { eager: true, as: 'url' });
@@ -66,28 +67,33 @@ export const Portfolio = () => {
       pswpModule: () => import('photoswipe'),
     });
     lightbox.init();
-    return () => {
-      lightbox.destroy();
-    };
+    return () => lightbox.destroy();
   }, [galleryItems]);
+
+  // Render function for each item
+  const renderMasonryItem = ({ data, index }: { data: typeof galleryItems[0]; index: number }) => (
+    <a
+      href={data.src}
+      data-pswp-width={data.width}
+      data-pswp-height={data.height}
+      key={galleryID + '-' + index}
+      target="_blank"
+      rel="noreferrer"
+      className={styles.galleryItem}
+    >
+      <img src={data.thumb} alt={'Matthijs Beeke'} />
+    </a>
+  );
 
   return (
     <div className={cx(styles.base)}>
       <h2>Portfolio</h2>
       <div className={cx(styles.galleryWrapper)} id={galleryID}>
-        {galleryItems.map((item, index) => (
-          <a
-            href={item.src}
-            data-pswp-width={item.width}
-            data-pswp-height={item.height}
-            key={galleryID + '-' + index}
-            target="_blank"
-            rel="noreferrer"
-            className={cx(styles.galleryItem)}
-          >
-            <img src={item.thumb} alt={'Matthijs Beeke'} />
-          </a>
-        ))}
+        <Masonry
+          items={galleryItems}
+          columnGutter={5}
+          render={renderMasonryItem}
+        />
       </div>
     </div>
   );

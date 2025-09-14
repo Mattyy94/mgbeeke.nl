@@ -22,11 +22,11 @@ export const AboutMe = () => {
       <article className={cx(styles.item)}>
         <h3>About me</h3>
         <span>
-        Hey there! I'm Matthijs, and i'm {age}. Been happily married to Astrid for {married} years.
-        Since May 2025, we've also been parents to our son, Gijs.
+        Hey there! I'm Matthijs, I'm {age} years old and live in Nunspeet. And I'm happily married with Astrid for {married} years now!
+        Since May 2025, we both have an extra role, since we became parents to our son Gijs.
           <br /><br />
-        We live in Nunspeet, together with our pets,
-        The best part? The forest is just a short 5-minute stroll away from our doorstep.
+        We live in a cozy house with our two cats Yui & Moshi and our dog Meggy.
+        And the best part? The forest is just a short 5-minute stroll away from our doorstep.
         It's like having nature's playground right in our backyard!
         </span>
         <span>
@@ -38,18 +38,19 @@ export const AboutMe = () => {
       <article className={cx(styles.item)}>
         <h3>Career</h3>
         <span>
-        In 2016, I started my career as fresh graduate i landed a role at Olyslager,
-        where I dived into front-end development. At Olyslager, we crafted oil advisors for well-known brands,
+        In 2016, I started my career as fresh graduate I landed a role at Olyslager,
+        where I dived into front-end development. At Olyslager, we crafted oil advisors for well-known brands.
           <br /><br />
         One of the exciting challenges I encountered was the migration from a colossal monolith/legacy system to micro frontends,
         utilizing the power of Vue.js and TypeScript.
         </span>
         <span>  
           In 2021, I took my talents to Brainstud, where I continued as a front-end developer.
-          Here, I'm working on an blended learning platform, shaping the future of education.
+          Here, I'm working on an blended learning platform, shaping the future of the next generation by improving their education!
           <br/> <br />
           In 2022, we completed a remarkable transformation,
           transitioning from a scattered multi-repo source to a unified monolith architecture powered by Next.js (React + TypeScript).
+          Till this day we keep improving the platform, adding new features and optimizations!
         </span>
       </article>
     </section>

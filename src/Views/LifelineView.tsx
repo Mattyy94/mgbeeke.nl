@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import LifelineDiagram from '../components/LifelineDiagram';
+import { LifelineDiagram, LifeLineLegenda } from '../components/LifelineDiagram';
 import styles from './Lifeline.module.css';
 import classnames from 'classnames';
 
@@ -48,6 +48,7 @@ export const LifelineView = () => {
     <div className={cx(styles.base)}>
       <h2>Lifeline</h2>
       <LifelineDiagram />
+      <LifeLineLegenda />
     </div>
   );
 };

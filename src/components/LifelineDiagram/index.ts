@@ -1,1 +1,2 @@
-export { default } from './LifelineDiagram'; 
+export * from './LifelineDiagram';
+export * from './LifeLineLegenda'; 

@@ -1,16 +1,191 @@
 [
-  { "year": 2012, "event": "High School", "description": "Started high school.", "type": "education", "rating": 6 },
-  { "year": 2016, "event": "Graduated High School", "description": "Finished high school with honors.", "type": "education", "rating": 8 },
-  { "year": 2017, "event": "First Job", "description": "Started working at a local store.", "type": "work", "rating": 5 },
-  { "year": 2018, "event": "University", "description": "Began university studies in Computer Science.", "type": "education", "rating": 7 },
-  { "year": 2019, "event": "Internship", "description": "Interned at a tech company.", "type": "work", "rating": 7 },
-  { "year": 2020, "event": "Graduated University", "description": "Completed BSc in Computer Science.", "type": "education", "rating": 9 },
-  { "year": 2021, "event": "First Full-time Job", "description": "Started as a junior developer.", "type": "work", "rating": 8 },
-  { "year": 2022, "event": "Promotion", "description": "Promoted to mid-level developer.", "type": "work", "rating": 9 },
-  { "year": 2023, "event": "Moved City", "description": "Relocated for work.", "type": "prive", "rating": 7 },
-  { "year": 2024, "event": "Started Hobby", "description": "Took up painting as a hobby.", "type": "prive", "rating": 8 },
-  { "year": 2025, "event": "Started Masters", "description": "Began MSc in Data Science.", "type": "education", "rating": 8 },
-  { "year": 2026, "event": "New Job", "description": "Joined a new company as a data scientist.", "type": "work", "rating": 9 },
-  { "year": 2027, "event": "Travel Abroad", "description": "Traveled to Japan for a month.", "type": "prive", "rating": 9 },
-  { "year": 2028, "event": "Graduated Masters", "description": "Completed MSc in Data Science.", "type": "education", "rating": 10 }
-] 
+    {
+        "year": 2011,
+        "event": "MBO Kampen",
+        "description": "Begonnen met ICT opleiding in kampen.",
+        "type": "education",
+        "rating": 7
+    },
+        {
+        "year": 2011,
+        "event": "Computer hulp aan huis",
+        "description": "Voor mezelf begonnen met computer hulp aan huis, was erg leuk om mensen te helpen.",
+        "type": "Work",
+        "rating": 8
+    },
+    {
+        "year": 2012,
+        "event": "Post sortering",
+        "description": "Sorteren van post als bijbaan.",
+        "type": "work",
+        "rating": 7
+    },
+    {
+        "year": 2012,
+        "event": "Scifose Operatie",
+        "description": "Scifose operatie, welke impact vol was, jaar revalidatie als gevolg",
+        "type": "prive",
+        "rating": 3
+    },
+    {
+        "year": 2012,
+        "event": "MBO ICT",
+        "description": "Tijdens mijn revalidatie vanuit huis stage lopen, echter liep de begeleiding niet goed.",
+        "type": "education",
+        "rating": 4
+    },
+    {
+        "year": 2013,
+        "event": "Begonnen bij ICT opleiding in Amersfoort",
+        "description": "Vanwege slechte begeleiding in kampen, heb ik de ICT opleiding in Amersfoort afgemaakt.",
+        "type": "education",
+        "rating": 8
+    },
+    {
+        "year": 2013,
+        "event": "Begonnen in de Horeca - Bijbaan",
+        "description": "Begonnen in de bediening van grieks restaurant, hier wel leuke tijd gehad, alleen manager had wat temprament..",
+        "type": "work",
+        "rating": 6
+    },
+    {
+        "year": 2014,
+        "event": "Thuis situatie",
+        "description": "Er kwam een persoon in huis wonen die niet goed was voor de situatie thuis, deze was psychisch niet in orde. ",
+        "type": "prive",
+        "rating": 3
+    },
+    {
+        "year": 2014,
+        "event": "Stages",
+        "description": "Stages bij kleine WebDevelopment bedrijven, was erg leuk en divers",
+        "type": "work",
+        "rating": 7
+    },
+    {
+        "year": 2015,
+        "event": "Persoon weg thuis",
+        "description": "Persoon weg uit huis, de situatie verbeterde.",
+        "type": "prive",
+        "rating": 7
+    },
+        {
+        "year": 2015,
+        "event": "Mats Media opgericht KVK",
+        "description": "Mats Media opgericht en ingeschreven bij kvk, websites maken voor klein mkb. Erg leuk om mee te denken met klant wensen.",
+        "type": "prive",
+        "rating": 8
+    },
+    {
+        "year": 2016,
+        "event": "Afgestudeerd ICT MBO opleiding",
+        "description": "Met een jaar vertragin uit eindelijk mijn MBO ICT opleiding afgerond.",
+        "type": "education",
+        "rating": 9
+    },
+    {
+        "year": 2016,
+        "event": "Olyslager - mijn eerste vaste baan",
+        "description": "Via de stagebegeleider bij Olyslager, binnen gekomen er werkte toen 20 man, erg gezellig bedrijf. Met nog beetje ouderwetse cultuur/structuur.",
+        "type": "work",
+        "rating": 7
+    },
+    {
+        "year": 2017,
+        "event": "Relatie",
+        "description": "Relatie met Astrid gekregen, de vlam sloeg gelijk over",
+        "type": "Prive",
+        "rating": 9
+    },
+    {
+        "year": 2019,
+        "event": "Ons Eerste huis gekocht",
+        "description": "Ons eerste huis gekocht in Nunspeet.",
+        "type": "prive",
+        "rating": 8
+    },
+    {
+        "year": 2020,
+        "event": "Getrouwd",
+        "description": "We zijn in januari getrouwd, later dat jaar een groot feest, was het idee, maar door corona is dat uitgesteld.",
+        "type": "prive",
+        "rating": 9
+    },
+    {
+        "year": 2020,
+        "event": "Werk bij Olyslager",
+        "description": "Begint het steeds minder leuk te vinden, met name de werksfeer, en de cultuur zitten mij dwars.",
+        "type": "work",
+        "rating": 5
+    },
+    {
+        "year": 2021,
+        "event": "Bruiloft weer uitgesteld",
+        "description": "Nog altijd corona, dus de bruiloft is weer uitgesteld totaal 3 keer.",
+        "type": "prive",
+        "rating": 5
+    },
+    {
+        "year": 2021,
+        "event": "Begonnen bij Brainstud",
+        "description": "Tijd voor nieuwe energie, bij een jong bedrijf waar alles kan.",
+        "type": "work",
+        "rating": 8
+    },
+    {
+        "year": 2022,
+        "event": "Bruilof!",
+        "description": "We konden eindelijk onze Bruiloft vieren, het was een geweldige dag met veel vrienden en familie.",
+        "type": "prive",
+        "rating": 9
+    },
+    {
+        "year": 2022,
+        "event": "Werk bij Brainstud!",
+        "description": "Het werk bij Brainstud is erg leuk, veel vrijheid en leuke collega's.",
+        "type": "work",
+        "rating": 8
+    },
+    {
+        "year": 2024,
+        "event": "Wordt minder leuk",
+        "description": "De sfeer bij Brainstud wordt minder, veel twijfels of ik het nog wel leuk vindt, ook beland ik in een burnout",
+        "type": "work",
+        "rating": 3
+    },
+    {
+        "year": 2024,
+        "event": "Overleiden Zwager",
+        "description": "Tijdens onze vakantie in Indonesië, overlijdt mijn zwager aan een hartstilstand, hierdoor moesten we terug naar Nederland.",
+        "type": "prive",
+        "rating": 1
+    },
+    {
+        "year": 2025,
+        "event": "Brainstud",
+        "description": "Mijn tijd bij dit berijf is wel voorbij, dit had ik al bedacht nu nog kijken waar ik blij van wordt.",
+        "type": "work",
+        "rating": 5
+    },
+    {
+        "year": 2025,
+        "event": "Gijs is geboren",
+        "description": "Onze zoon Gijs is geboren!",
+        "type": "prive",
+        "rating": 10
+    },
+        {
+        "year": 2026,
+        "event": "Nieuwe baan",
+        "description": "Een nieuwe baan gevonden die bij mij past",
+        "type": "Work",
+        "rating": 9
+    },
+    {
+        "year": 2028,
+        "event": "2e kindje",
+        "description": "Mogelijk een 2e kindje",
+        "type": "prive",
+        "rating": 9
+    }
+]
